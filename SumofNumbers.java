@@ -14,6 +14,7 @@ public class SumofNumbers {
         }
 
         System.out.println("Sum of numbers from 1 to" + " " + n +" is " + sum);
+        scanner.close();
     }
     
 }
