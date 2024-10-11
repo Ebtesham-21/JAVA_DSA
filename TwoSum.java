@@ -8,9 +8,16 @@ public class TwoSum {
         int B = scanner.nextInt();
 
         int sum = A + B;
+
+        
         System.out.println("Total ");
         System.out.println(sum);
+        System.out.println("Input bul");
+        boolean bul = scanner.nextBoolean();
+        System.out.println(bul);
         scanner.close();
+        // "Effective Java" by Joshua Bloch 
+        // book
 
     }
     
