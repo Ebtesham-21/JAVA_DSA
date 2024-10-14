@@ -14,6 +14,6 @@ public class ConditionalLargest {
         else {
             System.out.println("num2 big");
         }
-
+        sc.close();
     }
 }
