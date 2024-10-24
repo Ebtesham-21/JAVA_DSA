@@ -12,6 +12,6 @@ public class FuncParam {
         int a = sc.nextInt();
         int b = sc.nextInt();
         calculateSum(a, b);
-        sc.close();
+        sc.close(); 
     }
 }
