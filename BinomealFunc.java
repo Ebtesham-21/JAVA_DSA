@@ -23,6 +23,6 @@ public class BinomealFunc {
         int r = sc.nextInt();
         System.out.println("binomeal " + bionmeal(n, r));
         
-        sc.close();
+        sc.close(); 
     }
 }
