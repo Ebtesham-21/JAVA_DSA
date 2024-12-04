@@ -93,40 +93,73 @@ public class PatternsHolo {
     // }
 
 
-    public static void Butterfly(int n) {
-        for(int i = 1; i<=n; i++){
-            for(int j=1; j<=i; j++){
-                System.out.print("*");
-            }
-            for(int j=1; j<=2*(n-i); j++){
+    // public static void Butterfly(int n) {
+    //     for(int i = 1; i<=n; i++){
+    //         for(int j=1; j<=i; j++){
+    //             System.out.print("*");
+    //         }
+    //         for(int j=1; j<=2*(n-i); j++){
+    //             System.out.print(" ");
+    //         }
+    //         for(int j=1; j<=i; j++){
+    //             System.out.print("*");
+    //         }
+    //         System.out.println();
+    //     }
+
+    //     for(int i=n; i>=1; i--){
+    //         for(int j=1; j<=i; j++){
+    //             System.out.print("*");
+    //         }
+    //         for(int j=1; j<=2*(n-i); j++){
+    //             System.out.print(" ");
+    //         }
+    //         for(int j=1; j<=i; j++){
+    //             System.out.print("*");
+    //         }
+    //         System.out.println();
+    //     } 
+    // }
+
+    // public static void Rohombus(int n){
+    //     for (int i = 1; i<=n; i++){
+    //         for(int j = 1; j <= n-i; j++){
+    //             System.out.print(" ");
+    //         }
+    //         for(int j =1; j<=n; j++){
+    //             System.out.print("*");
+    //         }
+    //         System.err.println();
+    //     }
+
+    // }
+    public static void hollow_rhombus(int n) {
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=(n-i); j++){
                 System.out.print(" ");
             }
-            for(int j=1; j<=i; j++){
-                System.out.print("*");
+
+            for(int j=1; j<=n; j++){
+                if(i == 1 || i == n || j == 1 || j == n){
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
-
-        for(int i=n; i>=1; i--){
-            for(int j=1; j<=i; j++){
-                System.out.print("*");
-            }
-            for(int j=1; j<=2*(n-i); j++){
-                System.out.print(" ");
-            }
-            for(int j=1; j<=i; j++){
-                System.out.print("*");
-            }
-            System.out.println();
-        } 
     }
+     
 
     public static void main(String[] args) {
         // hollow_rectangle(10, 7);
         // inverted_rotated_half_pyramid(5);
         // Inverted_half_pyramid(5);
         // EVODDTRIANGLE(5);
-        Butterfly(5);
+        // Butterfly(5);
+        // Rohombus(5);
+    hollow_rhombus(5);
+    
     }
     
 }
