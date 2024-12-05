@@ -133,23 +133,64 @@ public class PatternsHolo {
     //     }
 
     // }
-    public static void hollow_rhombus(int n) {
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=(n-i); j++){
+    // public static void hollow_rhombus(int n) {
+    //     for(int i=1; i<=n; i++){
+    //         for(int j=1; j<=(n-i); j++){
+    //             System.out.print(" ");
+    //         }
+
+    //         for(int j=1; j<=n; j++){
+    //             if(i == 1 || i == n || j == 1 || j == n){
+    //                 System.out.print("*");
+    //             } else {
+    //                 System.out.print(" ");
+    //             }
+    //         }
+    //         System.out.println();
+    //     }
+    // }
+     
+    // public static void Diamond(int n){
+    //     for(int i = 1; i<=n; i++){
+    //         for(int j = 1; j<=n-i; j++){
+    //             System.out.print(" ");
+
+    //         }
+    //         for(int j = 1; j<=(2*i) - 1; j++){
+    //             System.out.print("*");
+
+    //         }
+    //     System.out.println();    
+    //     }
+
+
+    //     for(int i = n; i>=1; i--){
+    //         for(int j = 1; j<=(n-i); j++){
+    //             System.out.print(" ");
+
+    //         }
+    //         for(int j = 1; j<=(2*i) - 1; j++){
+    //             System.out.print("*");
+
+    //         }
+    //     System.out.println();    
+    //     }
+
+    // }
+
+    public static void NumberPiramid(int n){
+        int  counter = 1;
+        for(int i = 1; i <=n; i++){
+            for(int j = 1; j<=n-i; j++){
                 System.out.print(" ");
             }
-
-            for(int j=1; j<=n; j++){
-                if(i == 1 || i == n || j == 1 || j == n){
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
-                }
+            for(int j=1; j<=i;j++){
+                System.out.print(counter+" ");
             }
             System.out.println();
+            counter++;
         }
     }
-     
 
     public static void main(String[] args) {
         // hollow_rectangle(10, 7);
@@ -158,7 +199,9 @@ public class PatternsHolo {
         // EVODDTRIANGLE(5);
         // Butterfly(5);
         // Rohombus(5);
-    hollow_rhombus(5);
+    // hollow_rhombus(5);
+    // Diamond(4);
+    NumberPiramid(5);
     
     }
     
